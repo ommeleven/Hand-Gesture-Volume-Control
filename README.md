@@ -9,8 +9,10 @@ Hard Disk - Minimum 30GB
 
 
 Software Requirements:
-Platform - Minimum Windows 7 
+Platform - Minimum Windows 7 (only Windows support for mow)
 Programming Language - Python (version 3.6 and above)
+
+
 Libraries Used - OpenCV, Numpy, Mediapipe, Pycaw, Comtypes
 
 

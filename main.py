@@ -22,12 +22,11 @@ class HandDetector:
         results = self.hands.process(image)
         landMarkList = []
 
-        if results.multi_hand_landmarks:  # returns None if hand is not found
+        if results.multi_hand_landmarks: 
             hand = results.multi_hand_landmarks[handNumber] #results.multi_hand_landmarks returns landMarks for all the hands
 
             for id, landMark in enumerate(hand.landmark):
-                # landMark holds x,y,z ratios of single landmark
-                imgH, imgW, imgC = originalImage.shape  # height, width, channel for image
+                imgH, imgW, imgC = originalImage.shape 
                 xPos, yPos = int(landMark.x * imgW), int(landMark.y * imgH)
                 landMarkList.append([id, xPos, yPos])
 
